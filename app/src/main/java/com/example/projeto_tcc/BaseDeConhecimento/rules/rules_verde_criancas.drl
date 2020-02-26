@@ -1,0 +1,84 @@
+package rules
+
+import br.com.ifs.TCC.SintomasClassificacao
+
+rule "Criança chieira"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="chieira" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("VERDE");
+	end
+
+rule "Criança Comportamento atípico"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="comportamento_atipico" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("VERDE");
+	end
+
+rule "Criança deformidade"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="deformidade" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("VERDE");
+	end
+
+rule "Criança Evento recente"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="evento_recente" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("VERDE");
+	end
+
+rule "Criança Febril"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="febril" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("VERDE");
+	end
+
+rule "Criança inchaço"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="inchaco" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("VERDE");
+	end
+
+rule "Criança sinais de dor leve"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="sinais_de_dor_leve" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("VERDE");
+	end
+
+rule "Criança Sinais de dor leve recente"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="sinais_de_dor_leve_recente" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("VERDE");
+	end
+
+rule "Criança tosse produtiva"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="tosse_produtiva" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("VERDE");
+	end
+
+rule "Criança trauma toráxico"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="trauma_toraxico" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("VERDE");
+	end
+
+rule "Criança vomitos"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="vomitos" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("VERDE");
+	end
+
+
+
+

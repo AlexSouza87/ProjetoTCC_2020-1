@@ -1,0 +1,161 @@
+package rules
+
+import br.com.ifs.TCC.SintomasClassificacao
+
+rule "Criança Comprometimento vascular distal"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="comprometimento_vascular_distal" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança Resposta à dor ou a voz apenas"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="resposta_a_dor_ou_a_voz_apenas" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança Erupçao cultânea fixa"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="erupcao_cultanea_fixa" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança sat O2 muito baixa"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="sat_o2_muito_baixa" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança Criança quente"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="crianca_quente" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança Sinais de dor intensa"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="sinais_de_dor_intensa" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança Sinais de meningismo"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="sinais_de_meningismo" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança vomito de sangue"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="vomito_de_sangue" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança esforço resppiratório aumentado"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="esforco_respiratorio_aumentado" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança evacuaçao de sangue vivo ou escurecido"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="evacuacao_de_sangue_vivo_ou_escurecido" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança exaustão"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="exaustao" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança frases entrecortadas"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="frases_entrecortadas" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança hemoptise"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="hemoptise" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança Hipotermia"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="hipotermia" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança Hipotonia"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="hipotonia" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança História de overdose ou envenenamento"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="historia_de_overdose_ou_envenenamento" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança historia respiratoria significativa"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="historia_respiratoria_significativa" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança inicio agudo após trauma"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="inicio_agudo_apos_trauma" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança Não reage aos pais"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="nao_reage_aos_pais" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança PFE muito baixo"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="pfe_muito_baixo" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança Prostraçãoo"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="prostracao" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+rule "Criança Púrpura"
+	when 
+                offerObject: SintomasClassificacao(Sintomas=="purpura" && Grupo=="criancas")
+	then
+		offerObject.setClassificacao("LARANJA");
+	end
+
+
+
+
